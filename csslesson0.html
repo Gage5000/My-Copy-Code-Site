@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Code Copy Site | CSS Lesson 1</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="lessonS.css">
+</head>
+<body>
+<nav class="backNextHtml">
+<h1>CSS Lesson 1</h1>
+</nav>	
+<div class="sidenav">
+<div>
+<h2 align="center" id="colorDiff">Copy, Code, and Learn</h2>
+</div>
+<a href="HomeCCS.html">Home</a>
+<button class="dropdown-btn">Tools    
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i>
+</button>
+<div class="dropdown-container"> 
+<a href="csscolorshower.html">Css Shower</a>
+<a href="TheCCS.html">Drag and Drop</a>
+</div>	
+<button class="dropdown-btn">Code Lessons
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>
+</i>
+</button>
+<div class="dropdown-container">
+<a href="htmlesson0.html">HTML Lesson 1</a>
+<a href="htmlesson1.html">HTML Lesson 2</a>
+<a href="htmlesson2.html">HTML Lesson 3</a>
+<a href="htmlesson3.html">HTML Lesson 4</a>
+<a href="htmlesson4.html">HTML Lesson 5</a>
+<a href="htmlesson5.html">HTML Lesson 6</a>
+<a href="htmlesson6.html">HTML Lesson 7</a>
+<a id="activeAlt" href="#">CSS Lesson 1</a>
+<a href="csslesson1.html">CSS Lesson 2</a>  
+<a href="csslesson2.html">CSS Lesson 3</a>  
+<a href="csslesson3.html">CSS Lesson 4</a>  
+<a href="csslesson4.html">CSS Lesson 5</a>  
+<a href="csslesson5.html">CSS Lesson 6</a>  
+<a href="jslesson.html">JS Lesson</a>
+</div>
+</div>
+<div align="center" class="main">
+<div>
+<h2 class="spaserh2">What Is CSS?</h2>
+<div class="textStyleArea">
+<p>CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media. It can control the layout of multiple web pages all at once. External stylesheets are stored in CSS files.</p>	
+<p>CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.</p>
+<p>CSS can be in a external file, Internal using the style tag, or Inline using the style attribute.</p>
+</div>
+</div>
+<div>
+<h2 class="spaserh2">The Right Syntax for CSS</h2>
+<br>
+<div class="textStyleArea">
+<p>The selector points to the HTML element you want to style.</p>
+<p>The declaration block contains one or more declarations separated by semicolons.</p>
+<p>Each declaration includes a CSS property name and a value, separated by a colon.</p>
+<p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>body {</p>
+<p>background-color: lightblue;</p>
+<p>}</p>
+<p>h1 {</p>
+<p>color: white;</p>
+<p>text-align: center;</p>
+<p>}</p>	
+<p>p {</p>
+<p>font-family: verdana;</p>
+<p>font-size: 20px;</p>
+<p>}</p>
+<div align="right">
+<svg onclick="copyText(0)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<br>
+</div>
+<img src="Screenshot 2025-02-18 131625.png" alt="er" style="height: 100%; width: 100%;">
+<br><br>
+<div>
+<h2 class="spaserh2">CSS Selectors</h2>
+<br>
+<div class="textStyleArea">
+<p>CSS selectors are used to find and select HTML elements you want to style.</p>
+<p>There are five ways to select elements by id, class, *, the element or mlti elements</p>
+<ul>
+<li>Id selects the one element with id="blank". There can only be one of each id.</li>	
+<li>Class selects all elements with class="blank". There can be a lot of one class.</li>	
+<li>* selects all elements. ALL.</li>	
+<li>Selecting all of one element like p or h1.</li>	
+<li>Mlti elements selects more than one element and applies the CSS properties to them.</li>	
+</ul>		
+</div>	
+<code class="codeBackColor textToCopy">
+<div>
+<p>&lt;style&gt;</p>
+<p>#idColor {</p>
+<p>color: red;</p>
+<p>}</p>
+<p>.classColor {</p>
+<p>color: green;</p>
+<p>}</p>	
+<p>* {</p>
+<p>background-color: pink;</p>
+<p>}</p>	
+<p>p {</p>
+<p>color:blue;</p>
+<p>}</p>
+<p>h1, h2, h3 {</p>
+<p>color:yellow;</p>
+<p>}</p>
+<p>&lt;/style&gt;</p>
+<p>&lt;p id=&quot;idColor&quot;&gt;ID&lt;/p&gt;</p>
+<p>&lt;p class=&quot;classColor&quot;&gt;CLASS&lt;/p&gt;</p>
+<p>&lt;p class=&quot;classColor&quot;&gt;ALSO THE SAME CLASS&lt;/p&gt;</p>
+<p>&lt;p&gt;CLASSLESS,JUST P TAG&lt;/p&gt;</p>
+<p>&lt;h1&gt;H1&lt;/h1&gt;</p>
+<p>&lt;h2&gt;H2&lt;/h1&gt;</p>
+<p>&lt;h3&gt;H3&lt;/h1&gt;</p>	
+<div align="right">
+<svg onclick="copyText(1)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</div>
+</code>	
+<div class="outPutOfTheCodeBackColor">
+<p style="display: inline-block; color: red; background-color: pink;">ID</p>
+<br>
+<p style="display: inline-block; color: green; background-color: pink;">CLASS</p>
+<br>
+<p style="display: inline-block; color: green; background-color: pink;">ALSO THE SAME CLASS</p>
+<br>
+<p style="display: inline-block; color: blue; background-color: pink;">CLASSLESS, JUST P TAG</p>
+<br>
+<h1 style="display: inline-block; color: yellow; background-color: pink;">H1</h1>
+<br>
+<h2 style="display: inline-block; color: yellow; background-color: pink;">H2</h2>
+<br>
+<h3 style="display: inline-block; color: yellow; background-color: pink;">H3</h3>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">CSS Comments</h2>
+<br>
+<div class="textStyleArea">
+<p>CSS comments are not displayed on the page, but they can help document your source code.</p>	
+<p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>/* This is a single-line comment */</p>
+<p>p {</p>
+<p>color:  /* Set text color to red */  blue;</p>
+<p>}</p>
+<p>/* This is</p>
+<p>a multi-line</p>
+<p>comment */</p>
+<div align="right">
+<svg onclick="copyText(2)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<p style="color: blue;">It Works</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">CSS !important Rule</h2>
+<br>
+<div class="textStyleArea">
+<p>The !important rule in CSS is used to add more importance to a property/value than normal.</p>
+<p>Meaning if you use the !important rule, it will override ALL previous styling rules for that specific property on that element, regardless of id or class.</p>	
+</div>	
+<code class="codeBackColor textToCopy">
+<p>#idColor {</p>
+<p>background-color: blue;</p>
+<p>}</p>
+<p>.classColor {</p>
+<p>background-color: green;</p>
+<p>}</p>	
+<p>p {</p>
+<p>background-color: red !important;</p>
+<p>}</p>
+<div align="right">
+<svg onclick="copyText(3)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<div class="outPutOfTheCodeBackColor">
+<p style="display: inline-block; background-color: red;">This is the color.</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">CSS Combinators</h2>
+<br>
+<div class="textStyleArea">
+<p>A combinator is something that explains the relationship between the selectors.</p>
+<p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p>
+<p>There are four different combinators in CSS.</p>
+<ul>
+<li>Descendant combinator (space)</li>
+<li>Child combinator (&gt;)</li>
+<li>Next sibling combinator (+)</li>
+<li>Subsequent-sibling combinator (~)</li>
+</ul>	
+</div>	
+<code class="codeBackColor textToCopy">
+<p>div p{</p>
+<p>color: blue;</p>
+<p>}</p>
+<p>div &gt; p{</p>
+<p>color: blue;</p>
+<p>}</p>
+<p>div + p{</p>
+<p>color: blue;</p>
+<p>}</p>
+<p>div ~ p{</p>
+<p>color: blue;</p>	
+<p>}</p>
+<div align="right">
+<svg onclick="copyText(3)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<br>
+</div>		
+<br>
+</div>
+<nav class="backNextHtml" align="center">
+<div style="padding: 4px;"></div>
+<a href="csslesson1.html"><button>Next &rarr;</button></a>
+</nav>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}	
+function copyText(index) {
+    var elements = document.getElementsByClassName("textToCopy");
+    var text = elements[index].innerText;
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+}
+</script>
+</body>
+</html> 
+

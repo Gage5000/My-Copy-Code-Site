@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Code Copy Site | CSS Lesson 2</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="lessonS.css">
+</head>
+<body>
+<nav class="backNextHtml">
+<h1>CSS Lesson 2</h1>
+</nav>	
+<div class="sidenav">
+<div>
+<h2 align="center" id="colorDiff">Copy, Code, and Learn</h2>
+</div>
+<a href="HomeCCS.html">Home</a>
+<button class="dropdown-btn">Tools    
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i>
+</button>
+<div class="dropdown-container"> 
+<a href="csscolorshower.html">Css Shower</a>
+<a href="TheCCS.html">Drag and Drop</a>
+</div>	
+<button class="dropdown-btn">Code Lessons
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>
+</i>
+</button>
+<div class="dropdown-container">
+<a href="htmlesson0.html">HTML Lesson 1</a>
+<a href="htmlesson1.html">HTML Lesson 2</a>
+<a href="htmlesson2.html">HTML Lesson 3</a>
+<a href="htmlesson3.html">HTML Lesson 4</a>
+<a href="htmlesson4.html">HTML Lesson 5</a>
+<a href="htmlesson5.html">HTML Lesson 6</a>
+<a href="htmlesson6.html">HTML Lesson 7</a>
+<a href="csslesson0.html">CSS Lesson 1</a>
+<a id="activeAlt" href="#">CSS Lesson 2</a>  
+<a href="csslesson2.html">CSS Lesson 3</a>  
+<a href="csslesson3.html">CSS Lesson 4</a>  
+<a href="csslesson4.html">CSS Lesson 5</a>  
+<a href="csslesson5.html">CSS Lesson 6</a>  
+<a href="jslesson.html">JS Lesson</a>
+</div>
+</div>
+<div align="center" class="main">
+<div>
+<h2 class="spaserh2">What Can You Do With CSS?</h2>
+<div class="textStyleArea">
+<p>There are a lot of ways to change website like changing color, the background, borders, margins, padding, and height/width of all tags.</p>	
+<p>It is also important how box model and outlines work with all of the changes</p>
+</div>
+</div>
+<div>
+<h2 class="spaserh2">CSS Colors</h2>
+<div class="textStyleArea">
+<p>Colors are specified using predefined color names, or they can use RGB, HEX, HSL, RGBA, HSLA values.</p>
+<p>There are two css background-color and color</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>div {</p>
+<p>background-color: lightblue;</p>
+<p>}</p>
+<p>h1 {</p>
+<p>color: red;</p>
+<p>}</p>
+<div align="right">
+<svg onclick="copyText(0)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<div style="background-color: lightblue;">
+<h1 style="color: red;">This is the H1</h1>	
+</div>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">CSS borders</h2>
+<br>
+<div class="textStyleArea">
+<p>A border is a property that puts a line around a tag. A border-style property specifies what kind of border to display.</p>
+<p>The following values are allowed:</p>
+<ul>
+<li>dotted - Defines a dotted border</li>
+<li>dashed - Defines a dashed border</li>
+<li>solid - Defines a solid border</li>
+<li>double - Defines a double border</li>
+<li>groove - Defines a 3D grooved border. The effect depends on the border-color value</li>
+<li>ridge - Defines a 3D ridged border. The effect depends on the border-color value</li>
+<li>inset - Defines a 3D inset border. The effect depends on the border-color value</li>
+<li>outset - Defines a 3D outset border. The effect depends on the border-color value</li>
+<li>none - Defines no border</li>
+<li>hidden - Defines a hidden border</li>
+</ul>
+</div>	
+<code class="codeBackColor textToCopy">
+<div>
+<p>.dotted {border-style: dotted;}</p>
+<p>.dashed {border-style: dashed;}</p>
+<p>.solid {border-style: solid;}</p>
+<p>.double {border-style: double;}</p>
+<p>.groove {border-style: groove;}</p>
+<p>.ridge {border-style: ridge;}</p>
+<p>.inset {border-style: inset;}</p>
+<p>.outset {border-style: outset;}</p>
+<p>.none {border-style: none;}</p>
+<p>.hidden {border-style: hidden;}</p>
+<p>.mix {border-style: dotted dashed solid double;}</p>
+<div align="right">
+<svg onclick="copyText(1)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</div>
+</code>	
+<div class="outPutOfTheCodeBackColor">
+<p style="border-style: dotted;">A dotted border.</p>
+<p style="border-style: dashed;">A dashed border.</p>
+<p style="border-style: solid;">A solid border.</p>
+<p style="border-style: double;">A double border.</p>
+<p style="border-style: groove;">A groove border.</p>
+<p style="border-style: ridge;">A ridge border.</p>
+<p style="border-style: inset;">An inset border.</p>
+<p style="border-style: outset;">An outset border.</p>
+<p style="border-style: none;">No border.</p>
+<p style="border-style: hidden;">A hidden border.</p>
+<p style="border-style: dotted dashed solid double;">A mixed border.</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">CSS Margins</h2>
+<br>
+<div class="textStyleArea">
+<p>Margins are used to create space around elements, outside of any defined borders.</p>	
+<p>With margins, you have full control over the margins to the top, right, botton, and left for setting the margin for each side of an element.</p>
+<p>You can set the margin property to auto to horizontally center the element.</p>
+<p>The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>p {</p>
+<p>margin: 90px;</p>
+<p>}</p>
+<div align="right">
+<svg onclick="copyText(2)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<p style="margin: 90px; border: solid 2px rgba(219,21,24,1.00);">This is 90px margin.</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">CSS Padding</h2>
+<br>
+<div class="textStyleArea">
+<p>Padding is used to create space around but inside an element's content.</p>	
+</div>	
+<code class="codeBackColor textToCopy">
+<p>p {</p>
+<p>padding: 90px;</p>
+<p>}</p>	
+<div align="right">
+<svg onclick="copyText(3)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+
+<div class="outPutOfTheCodeBackColor">
+<p style="padding: 90px; border: solid 2px rgba(219,21,24,1.00);">This is 90px padding.</p>
+</div>
+</div>
+<br>
+<div >
+<h2 class="spaserh2">CSS Height and Width</h2>
+<br>
+<div class="textStyleArea">
+<p>The height and width properties are used to set the height and width of an element.</p>
+</div>	
+<code class="codeBackColor textToCopy">
+<p>img {</p>
+<p>height: 150px;</p>
+<p>width: 150px;</p>
+<p>}</p>
+<p>.imgAlt {</p>
+<p>height: 100px;</p>
+<p>width: 100px;</p>
+<p>}</p>
+<div align="right">
+<svg onclick="copyText(4)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<div class="outPutOfTheCodeBackColor">
+<img src="this is the one yrew.png" alt="Image of Site Logo" style="height: 150px; width: 150px;">
+<img src="this is the one yrew.png" alt="Image of Site Logo" style="height: 100px; width: 100px;">
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">CSS Box Model</h2>
+<br>
+<div class="textStyleArea">
+<p>The term box model is used when talking about design and layout.</p>
+<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins. The image below illustrates the box model.</p>
+<img class="Scaler" alt="Image of box model" src="Screenshot 2025-02-19 125516.png">
+</div>	
+<code class="codeBackColor textToCopy">	
+<p>div {</p>
+<p>margin: 10px;</p> 
+<p>padding: 10px;</p> 
+<p>border: solid 4px green;</p>
+<p>}</p>	
+<div align="right">
+<svg onclick="copyText(5)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<div style="margin: 10px; padding: 10px; border: solid 4px green;">This is a div.</div>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">CSS Outline</h2>
+<br>
+<div class="textStyleArea">
+<p>An outline is a line drawn outside the element's border.</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>div {</p>
+<p>border: 2px solid black; </p>
+<p>outline: green solid 10px;</p>
+<p>}</p>
+<div align="right">
+<svg onclick="copyText(6)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div style="padding: 20px" class="outPutOfTheCodeBackColor">
+<div style="border: 2px solid black; outline: green solid 10px;">This is the outline.</div>
+</div>		
+</div>
+<br>
+</div>
+<nav class="backNextHtml" align="center">
+<div style="padding: 4px;"></div>
+<a href="csslesson0.html"><button>&larr; Back</button></a>
+<a href="csslesson2.html"><button>Next &rarr;</button></a>
+</nav>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}	
+function copyText(index) {
+    var elements = document.getElementsByClassName("textToCopy");
+    var text = elements[index].innerText;
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+}
+</script>
+</body>
+</html>

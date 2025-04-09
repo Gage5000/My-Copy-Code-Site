@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Code Copy Site | HTML Lesson 3</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="do.css">
+</head>
+<body>
+<nav class="backNextHtml">
+<h1>HTML Lesson 3</h1>
+</nav>	
+<div class="sidenav">
+<div>
+<h2 align="center" id="colorDiff">Copy, Code, and Learn</h2>
+</div>
+<a href="HomeCCS.html">Home</a>
+<button class="dropdown-btn">Tools    
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i>
+</button>
+<div class="dropdown-container"> 
+<a href="csscolorshower.html">Css Shower</a>
+<a href="TheCCS.html">Drag and Drop</a>
+</div>	
+<button class="dropdown-btn">Code Lessons
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>
+</i>
+</button>
+<div class="dropdown-container">
+<a href="htmlesson0.html">HTML Lesson 1</a>
+<a href="htmlesson1.html">HTML Lesson 2</a>
+<a id="activeAlt" href="#">HTML Lesson 3</a>
+<a href="htmlesson3.html">HTML Lesson 4</a>
+<a href="htmlesson4.html">HTML Lesson 5</a>
+<a href="htmlesson5.html">HTML Lesson 6</a>
+<a href="htmlesson6.html">HTML Lesson 7</a>
+<a href="csslesson0.html">CSS Lesson 1</a>
+<a href="csslesson1.html">CSS Lesson 2</a>  
+<a href="csslesson2.html">CSS Lesson 3</a>  
+<a href="csslesson3.html">CSS Lesson 4</a>  
+<a href="csslesson4.html">CSS Lesson 5</a>  
+<a href="csslesson5.html">CSS Lesson 6</a>  
+<a href="jslesson.html">JS Lesson</a>
+</div>
+</div>
+<div align="center" class="main">
+<div>
+<h2 class="spaserh2">Text Formatting Tags</h2>
+<div class="textStyleArea">
+<p>HTML has several tags for defining text with a special meaning.</p>
+<p>All text HTML elements can be affected by Formatting tags if you put them around the text tag like so: <code>&lt;b&gt;&lt;p&gt;Text&lt;/p&gt;&lt;/b&gt;</code>.</p>	
+<p>but you also can just use the formatting tags by themself.</p>
+</div>
+</div>
+<div>
+<h2 class="spaserh2">The B Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;b&gt;</code> tag defines the text within it as bold text making all of the text bold.</p>
+</div>
+<br>
+<code class="codeBackColor textToCopy">
+<p>&lt;b&gt;Bolded Text&lt;b&gt;</p>
+<p>&lt;p&gt;Non-bolded Text&lt;p&gt;</p>
+<div align="right">
+<svg onclick="copyText(0)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<br>
+<div class="outPutOfTheCodeBackColor">
+<b>Bolded Text</b>
+<p>Non-bolded Text</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Strong Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;strong&gt;</code> element defines text with importance and content inside is displayed bolded.</p>
+<p>The different between the B and Strong tags are that strong is more important than the B tag.</p>
+</div>	
+<br>
+<code class="codeBackColor textToCopy">
+<div>
+<p>&lt;strong&gt;Strong Text&lt;/strong&gt;</p>
+<p>&lt;p&gt;Non-Strong Text&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(1)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</div>
+</code>	
+<br>
+<div class="outPutOfTheCodeBackColor">
+<strong>Strong Text</strong>
+<p>Non-Strong Text</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The I Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;i&gt;</code> tag makes text italic.</p>	
+</div>
+<br>
+<code class="codeBackColor textToCopy">
+<p>&lt;i&gt;Italic Text&lt;/i&gt;</p>
+<p>&lt;p&gt;Non-italic Text&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(2)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<br>
+<div class="outPutOfTheCodeBackColor">
+<i>Italic Text</i>
+<p>Non-italic Text</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Em Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;em&gt;</code> tag defines emphasized text and the content inside is displayed in italic.</p>	
+<p>Just like bolded the only different between the the two tags is the use case with the em tag used if you need text emphasized and the I tag if you just need text italic.</p>
+</div>	
+<br>
+<code class="codeBackColor textToCopy">
+<p>&lt;em&gt;Emphasized Text&lt;/em&gt;</p>
+<p>&lt;p&gt;Non-emphasized Text&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(3)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<br>
+<div class="outPutOfTheCodeBackColor">
+<em>Emphasized Text</em>
+<p>Non-emphasized Text</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Small Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;small&gt;</code> tag makes text smaller.</p>
+</div>	
+<br>
+<code class="codeBackColor textToCopy">
+<p>&lt;small&gt;Smaller Text&lt;/Small&gt;</p>
+<p>&lt;p&gt;Non-smaller Text&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(4)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<br>
+<div class="outPutOfTheCodeBackColor">
+<small>Smaller Text</small>
+<p>Non-smaller Text</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Mark Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;mark&gt;</code> tag makes text highlighted.</p>
+</div>	
+<br>
+<code class="codeBackColor textToCopy">	
+<p>&lt;mark&gt;Highlighted Text&lt;/mark&gt;</p>	
+<p>&lt;p&gt;Non-highlighted Text&lt;/p&gt;</p>	
+<div align="right">
+<svg onclick="copyText(5)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<br>
+<div class="outPutOfTheCodeBackColor">
+<mark>Highlighted Text</mark>
+<p>Non-highlighted Text</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Del Tag </h2>
+<div class="textStyleArea">
+<p>The <code>&lt;del&gt;</code> tag defines text that has been deleted from the page and the browsers usually strike a line through the deleted text.</p>
+</div>
+<br>
+<code class="codeBackColor textToCopy">
+<p>&lt;del&gt;Deleted Text&lt;/del&gt;</p>
+<p>&lt;p&gt;Non-deleted Text&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(6)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<br>
+<div class="outPutOfTheCodeBackColor">
+<del>Deleted Text</del>
+<p>Non-deleted Text</p>
+</div>		
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Sub Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;sub&gt;</code> tag is subscript text that is half a character below the normal size.</p>
+</div>
+<br>
+<code class="codeBackColor textToCopy">
+<p>&lt;p&gt;Non-subscript Text&lt;sub&gt;Subscript Text&lt;/sub&gt;&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(7)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<br>
+<div class="outPutOfTheCodeBackColor">
+<p>Non-subscript Text<sub>Subscript Text</sub></p>
+</div>		
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Sup Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;sup&gt;</code> tag defines superscript text it is half a character above the normal line.</p>
+</div>
+<br>
+<code class="codeBackColor textToCopy">
+<p>&lt;p&gt;Non-subscript Text&lt;sup&gt;Subscript Text&lt;/sup&gt;&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(8)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<br>
+<div class="outPutOfTheCodeBackColor">
+<p>Non-subscript Text<sup>Subscript Text</sup></p>
+</div>		
+</div>
+<br>
+<div class="flexAltIts" align="center">
+<h2 class="spaserh2">HTML Block and Inline Tags</h2>
+<div class="textStyleArea">
+<p>Block-level Tags always starts on a new line, and the browsers automatically adds some space (margin) before and after the element.</p>
+<p>A block-level element always takes up the full width available.</p>
+<p>Here are all of the block-level tags:<code>&lt;address&gt;&lt;article&gt;&lt;aside&gt;&lt;blockquote&gt;&lt;canvas&gt;&lt;dd&gt;&lt;div&gt;&lt;dl&gt;&lt;dt&gt;&lt;fieldset&gt;&lt;figcaption&gt;&lt;figure&gt;&lt;footer&gt;&lt;form&gt;&lt;h1&gt;&lt;h2&gt;&lt;h3&gt;&lt;h4&gt;&lt;h5&gt;&lt;h6&gt;&lt;header&gt;&lt;hr&gt;&lt;li&gt;&lt;main&gt;&lt;nav&gt;&lt;noscript&gt;&lt;ol&gt;&lt;p&gt;&lt;pre&gt;&lt;section&gt;&lt;table&gt;&lt;tfoot&gt;&lt;ul&gt;&lt;video&gt;</code></p>
+</div>
+<br>   
+<div class="textStyleArea">
+<p>Inline-level are the opposite of block tags meaning it does not start on a new line and only takes up as much width as necessary.</p>
+<p>Here are all of the Inline-level tags:<code> &lt;a&gt;&lt;abbr&gt;&lt;acronym&gt;&lt;b&gt;&lt;bdo&gt;&lt;big&gt;&lt;br&gt;&lt;button&gt;&lt;cite&gt;&lt;code&gt;&lt;dfn&gt;&lt;em&gt;&lt;i&gt;&lt;img&gt;&lt;input&gt;&lt;kbd&gt;&lt;label&gt;&lt;map&gt;&lt;object&gt;&lt;output&gt;&lt;q&gt;&lt;samp&gt;&lt;script&gt;&lt;select&gt;&lt;small&gt;&lt;span&gt;&lt;strong&gt;&lt;sub&gt;&lt;sup&gt;&lt;textarea&gt;&lt;time&gt;&lt;tt&gt;&lt;var&gt;</code></p>
+</div>
+</div>
+</div>
+<br>
+<nav class="backNextHtml" align="center">
+<div style="padding: 4px;"></div>
+<a href="htmlesson1.html"><button>&larr; Back</button></a>
+<a href="htmlesson3.html"><button>Next &rarr;</button></a>
+</nav>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}	
+function copyText(index) {
+    var elements = document.getElementsByClassName("textToCopy");
+    var text = elements[index].innerText;
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+}
+</script>
+</body>
+</html> 
+

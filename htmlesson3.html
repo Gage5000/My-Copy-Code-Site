@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Code Copy Site | HTML Lesson 4</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="do.css">
+</head>
+<body>
+<nav class="backNextHtml">
+<h1>HTML Lesson 4</h1>
+</nav>	
+<div class="sidenav">
+<div>
+<h2 align="center" id="colorDiff">Copy, Code, and Learn</h2>
+</div>
+<a href="HomeCCS.html">Home</a>
+<button class="dropdown-btn">Tools    
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i>
+</button>
+<div class="dropdown-container"> 
+<a href="csscolorshower.html">Css Shower</a>
+<a href="TheCCS.html">Drag and Drop</a>
+</div>	
+<button class="dropdown-btn">Code Lessons
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>
+</i>
+</button>
+<div class="dropdown-container">
+<a href="htmlesson0.html">HTML Lesson 1</a>
+<a href="htmlesson1.html">HTML Lesson 2</a>
+<a href="htmlesson2.html">HTML Lesson 3</a>
+<a id="activeAlt" href="#">HTML Lesson 4</a>
+<a href="htmlesson4.html">HTML Lesson 5</a>
+<a href="htmlesson5.html">HTML Lesson 6</a>
+<a href="htmlesson6.html">HTML Lesson 7</a>
+<a href="csslesson0.html">CSS Lesson 1</a>
+<a href="csslesson1.html">CSS Lesson 2</a>  
+<a href="csslesson2.html">CSS Lesson 3</a>  
+<a href="csslesson3.html">CSS Lesson 4</a>  
+<a href="csslesson4.html">CSS Lesson 5</a>  
+<a href="csslesson5.html">CSS Lesson 6</a>  
+<a href="jslesson.html">JS Lesson</a>
+</div>
+</div>
+<div align="center" class="main">
+<div align="center">
+<h2 class="spaserh2">HTML Quotation and Citation Tags</h2>
+<div class="textStyleArea">
+<p>HTML has several tags for defining different Quotations and Citations.</p>
+</div>
+</div>
+<div>
+<h2 class="spaserh2">The Blockquote Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;blockquote&gt;</code> tag defines a section that is quoted from another source.</p>
+<p>Most of the time blockquotes are indent to show that it is a quote.</p>
+<p>You can add a Attribute called cite so that you can add the website is that you are quoting.</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>&lt;blockquote cite="https://www.noodles.com/about-noodles"&gt;Since 1995, our mission at Noodles and Company has been to nourish and inspire every team member, guest and community we serve.&lt;/blockquote&gt;</p>
+<div align="right">
+<svg onclick="copyText(0)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<blockquote cite="https://www.noodles.com/about-noodles">
+Since 1995, our mission at Noodles and Company has been to nourish and inspire every team member, guest and community we serve.
+</blockquote>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Q Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;q&gt;</code> tag defines a short quote and is short for quotation.</p>
+<p>It adds quotations marks around the quote.</p>
+</div>	
+<code class="codeBackColor textToCopy">
+<div>
+<p>&lt;p&gt;In this quote Noodles and Company tells there mission saying&lt;q&gt; our mission at Noodles and Company has been to nourish and inspire every team member, guest and community we serve.&lt;/q&gt;&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(1)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</div>
+</code>	
+<div class="outPutOfTheCodeBackColor">
+<p>In this quote Noodles And Company tells there mission saying <q>our mission at Noodles and Company has been to nourish and inspire every team member, guest and community we serve.</q></p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Abbr Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;abbr&gt;</code> tag defines an abbreviation or an acronym, like "HTML", "CSS", and "ASAP" abbreviation or "Dr.", "Mr", "Ms"  acronym. </p>	
+<p>The abbr tag works with the title attribute to show the description for the abbreviation/acronym when you mouse over the text. </p>
+<p>For this example to work we need to use the &amp; so we use &amp;amp; to do so.</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>&lt;p&gt;I would love to go to&lt;/abbr title="Noodles and Company"&gt; N&amp;C&lt;/abbr&gt;&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(2)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<p>I would love to go to<abbr> N&amp;C</abbr></p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Address Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;address&gt;</code> tag defines contact information for the author or owner of a document or an article.</p>	
+<p>The text in the address tag are italic, and browsers add a line break before and after the address tag.</p>
+</div>	
+<code class="codeBackColor textToCopy">
+<p>&lt;address&gt;</p>
+<p>Written by Joe Stavens.&lt;br&gt;</p>
+<p>Visit us at:&lt;br&gt;</p>
+<p>Example.com&lt;br&gt;</p>
+<p>Box 173, landpark&lt;br&gt;</p>
+<p>USA</p>
+<p>&lt;/address&gt;</p>
+<div align="right">
+<svg onclick="copyText(3)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<div class="outPutOfTheCodeBackColor">
+<address>
+Written by Joe Stavens.<br>
+Visit us at:<br>
+Example.com<br>
+Box 173, landpark<br>
+USA
+</address>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Cite Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;cite&gt;</code> tag defines the name of a art work like books, poems, songs, movies, sculptures, etc.</p>
+<p>The text in the cite tag are in italic.</p>
+</div>		
+<code class="codeBackColor textToCopy">
+<p>&lt;p&gt; The movie &lt;cite&gt; How the Grinch Stole Christmas&lt;/cite&gt;director by Ron Howard and released on Nov 17, 2000&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(4)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<div class="outPutOfTheCodeBackColor">
+<p>The movie<cite> How the Grinch Stole Christmas</cite> director by Ron Howard and released on Nov 17, 2000</p>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Bdo Tag</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;bdo&gt;</code> tag overrides the current text direction revasing the text.</p>
+<p>bdo stands for Bi-Directional Override.</p>
+<p>The dir attribute is what is changing the direction that it is going with rtl reversing it and ltr doing nothing.</p>
+</div>	
+<code class="codeBackColor textToCopy">	
+<p>&lt;bdo dir="rtl"&gt;This shows what bdo is doing.&lt;/bdo&gt;</p>
+<p>&lt;bdo dir="ltr"&gt;This shows what bdo is doing.&lt;/bdo&gt;</p>
+<div align="right">
+<svg onclick="copyText(5)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<bdo dir="rtl">This shows what bdo is doing.</bdo>
+<bdo dir="ltr">This shows what bdo is doing.</bdo>
+</div>
+</div>
+<br>
+</div>
+<nav class="backNextHtml" align="center">
+<div style="padding: 4px;"></div>
+<a href="htmlesson2.html"><button>&larr; Back</button></a>
+<a href="htmlesson4.html"><button>Next &rarr;</button></a>
+</nav>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}	
+function copyText(index) {
+    var elements = document.getElementsByClassName("textToCopy");
+    var text = elements[index].innerText;
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+}
+</script>
+</body>
+</html> 

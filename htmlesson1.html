@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Code Copy Site | HTML Lesson 2</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="do.css">
+</head>
+<body>
+<nav class="backNextHtml">
+<h1>HTML Lesson 2</h1>
+</nav>	
+<div class="sidenav">
+<div>
+<h2 align="center" id="colorDiff">Copy, Code, and Learn</h2>
+</div>
+<a href="HomeCCS.html">Home</a>
+<button class="dropdown-btn">Tools    
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i>
+</button>
+<div class="dropdown-container"> 
+<a href="csscolorshower.html">Css Shower</a>
+<a href="TheCCS.html">Drag and Drop</a>
+</div>	
+<button class="dropdown-btn">Code Lessons
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>
+</i>
+</button>
+<div class="dropdown-container">
+<a href="htmlesson0.html">HTML Lesson 1</a>
+<a id="activeAlt" href="#">HTML Lesson 2</a>
+<a href="htmlesson2.html">HTML Lesson 3</a>
+<a href="htmlesson3.html">HTML Lesson 4</a>
+<a href="htmlesson4.html">HTML Lesson 5</a>
+<a href="htmlesson5.html">HTML Lesson 6</a>
+<a href="htmlesson6.html">HTML Lesson 7</a>
+<a href="csslesson0.html">CSS Lesson 1</a>
+<a href="csslesson1.html">CSS Lesson 2</a>  
+<a href="csslesson2.html">CSS Lesson 3</a>  
+<a href="csslesson3.html">CSS Lesson 4</a>  
+<a href="csslesson4.html">CSS Lesson 5</a>  
+<a href="csslesson5.html">CSS Lesson 6</a>  
+<a href="jslesson.html">JS Lesson</a>
+</div>
+</div>
+<div align="center" class="main">
+<div>
+<h2 class="spaserh2">What Are HTML Attributes?</h2>
+<div class="textStyleArea">
+<p>All HTML elements can have attributes</p>	
+<p>Attributes provide additional information about elements</p>
+<p>Attributes are always specified in the start tag</p>	
+<p>Attributes usually come in name/value pairs like: name="value"</p>
+<p>HTML describes the structure of a Web page and tells the browser how to display the content.</p>
+<p>Some Attributes need a length described like VH (viewport height) VW (viewport width) or PX (Pixels).</p>
+</div>
+</div>
+<div>
+<h2 class="spaserh2">The Href Attribute</h2>
+<br>
+<div class="textStyleArea">
+<p>The <code>&lt;a&gt;</code> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to. For example here is a link to the web site for noodles and company.</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>&lt;a href="https://www.noodles.com/"&gt; Click Me&lt;a&gt;</p>
+<div align="right">
+<svg onclick="copyText(0)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<a target="_blank" href="https://www.noodles.com/">Click Me</a>		
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Src Attribute</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed. For example here is a image.</p>
+</div>	
+<code class="codeBackColor textToCopy">
+<div>
+<p>&lt;img src="exampleImageSiteLogo.png"&gt;</p>
+<div align="right">
+<svg onclick="copyText(1)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</div>
+</code>	
+<nav class="outPutOfTheCodeBackColor">
+<img class="imgCenter" alt="ghjghjghj" width="80px" src="this is the one yrew.png">
+</nav>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Alt Attribute</h2>
+<div class="textStyleArea">
+<p>The alt attribute is required for the <code>&lt;img&gt;</code> tag. It specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader. For example here is a image that does not work. </p>	
+</div>
+<code class="codeBackColor textToCopy">
+<p>&lt;img alt="website logo CCL" src="notWorkingImageLogo.png"&gt;</p>
+<div align="right">
+<svg onclick="copyText(2)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<img class="imgCenter" alt="website logo CCL"  src="this is not one yrew.png">
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Width And Height Attributes</h2>
+<div class="textStyleArea">
+<p>The <code>&lt;img&gt;</code> tag should also contain the width and height attributes, which specify the width and height of the image in pixels (px).</p>	
+</div>	
+<code class="codeBackColor textToCopy">
+<p>&lt;img width="80px" alt="SiteLogo" height="200px" src="exampleImageSiteLogo.png"&gt;</p>
+<div align="right">
+<svg onclick="copyText(3)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<div class="outPutOfTheCodeBackColor">
+<img class="imgCenter" alt="website logo CCL" width="80px" height="200px" src="this is the one yrew.png">
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Style Attribute</h2>
+<div class="textStyleArea">
+<p>The style attribute is used to add styles to an element, such as color, font, size, and more.</p>
+<p>This is the same as css code.</p>
+</div>	
+<code class="codeBackColor textToCopy">
+<p>&lt;p style="background-color: green;"&gt;This Is Some text to show style&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(4)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<div class="outPutOfTheCodeBackColor">
+<p style="display: inline-block; background-color: green;">This Is Some text to show style</p>
+</div>
+</div>
+<br>
+<div class="flexAltIts" align="center">
+<h2 class="spaserh2">The Lang Attribute	</h2>
+<div class="textStyleArea">
+<p>You should include the lang attribute inside the <code>&lt;html&gt;</code> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+<p>Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country.</p>
+<p>For example it specifies English U.S. as the language.</p>
+</div>	
+<code class="codeBackColor textToCopy">	
+<p>&lt;!DOCTYPE html&gt;</p>	
+<p>&lt;html lang="en-US"&gt;</p>	
+<p>&lt;body&gt;</p>	
+<p>&lt;/body&gt;</p>	
+<p>&lt;/html&gt;</p>
+<div align="right">
+<svg onclick="copyText(5)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">The Title Attribute</h2>
+<div class="textStyleArea">
+<p>The title attribute defines some extra information about an element.</p>
+<p>The value of the title attribute will be displayed as a tooltip when your mouse is over the element.</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>&lt;p title="This Is It"&gt;This Is Some text to show style&lt;/p&gt;</p>
+<div align="right">
+<svg onclick="copyText(6)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<p title="This Is It">This Is Some text to show title</p>
+</div>		
+</div>
+<br>
+</div>
+<nav class="backNextHtml" align="center">
+<div style="padding: 4px;"></div>
+<a href="htmlesson0.html"><button>&larr; Back</button></a>
+<a href="htmlesson2.html"><button>Next &rarr;</button></a>
+</nav>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}	
+function copyText(index) {
+    var elements = document.getElementsByClassName("textToCopy");
+    var text = elements[index].innerText;
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+}
+</script>
+</body>
+</html> 
+

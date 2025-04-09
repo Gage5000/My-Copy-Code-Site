@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS For The HTML Page "HomeCCS.html"*/
+
+body {
+  background-color:white;
+  font-family:Arial;
+}
+.buttonForLinks {
+	border-color: rgb(100, 255, 50);
+	border-radius: 12px;
+	color:white;
+	background-color:black;
+	font-size:20px;
+}
+.bottonA {
+	border-color: rgb(100, 255, 50);
+	border-radius: 12px;
+	color:white;
+	background-color:black;
+}
+.sidenav {
+    width: 250px;
+    background: #333;
+    color: white;
+    position: fixed;
+    height: 100%;
+	padding-top: 20px;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+	z-index:1;
+  	top:0;
+  	left:0;
+}
+.sidenav a, .dropdown-btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+	background: #444;
+    display: block;
+    transition: 0.3s;
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+	width: 100%;
+  	height: auto;
+}
+.sidenav a:hover, .dropdown-btn:hover {
+    background: #575757;
+}
+.main {
+  margin-left: 250px;
+  font-size:20px; 
+}
+.active {
+  border-left:3px solid rgb(100,255,50);
+}
+#activeAlt{
+  border-left:3px solid rgb(100,255,50);
+}
+.dropdown-container {
+  display:none;
+  background-color:#262626;
+  padding-left:0px;
+}
+.fa-caret-down {
+  float:right;
+  padding-right:8px;
+}
+#spaser {
+  padding-bottom: 20px;	
+}
+svg:active {
+  color:white;
+}
+.spaserh2 {
+  padding-top:10px;
+}
+.header1Stl { 
+  width: 100%;
+  margin-left: 200px;
+  background-color: black; 
+  padding:0px;
+}
+@media screen and (max-width:850px) {
+.sidenav {
+  height:inherit;
+  width:inherit;
+  position:inherit;
+  z-index:inherit;
+  top:inherit;
+  left:inherit;
+  overflow-x:inherit;
+  padding-top:15px;
+}
+.main {
+  margin-left:0px; 
+}
+.fa-caret-down {
+  float:right;
+  padding-right:8px;
+}
+.header1Stl {  
+  margin-left: 0px;
+}
+#colorDiff {
+display: none;
+}
+}

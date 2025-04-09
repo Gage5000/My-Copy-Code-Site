@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Code Copy Site | JS Lesson</title>  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="jsless.css">
+</head>
+<body>
+<nav class="backNextHtml">
+<h1>JS Lesson</h1>
+</nav>	
+<div class="sidenav">
+<div>
+<h2 align="center" id="colorDiff">Copy, Code, and Learn</h2>
+</div>
+<a href="HomeCCS.html">Home</a>
+<button class="dropdown-btn">Tools    
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i>
+</button>
+<div class="dropdown-container"> 
+<a href="csscolorshower.html">Css Shower</a>
+<a href="TheCCS.html">Drag and Drop</a>
+</div>	
+<button class="dropdown-btn">Code Lessons
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>
+</i>
+</button>
+<div class="dropdown-container">
+<a href="htmlesson0.html">HTML Lesson 1</a>
+<a href="htmlesson1.html">HTML Lesson 2</a>
+<a href="htmlesson2.html">HTML Lesson 3</a>
+<a href="htmlesson3.html">HTML Lesson 4</a>
+<a href="htmlesson4.html">HTML Lesson 5</a>
+<a href="htmlesson5.html">HTML Lesson 6</a>
+<a href="htmlesson6.html">HTML Lesson 7</a>
+<a href="csslesson0.html">CSS Lesson 1</a>
+<a href="csslesson1.html">CSS Lesson 2</a>  
+<a href="csslesson2.html">CSS Lesson 3</a>  
+<a href="csslesson3.html">CSS Lesson 4</a>  
+<a href="csslesson4.html">CSS Lesson 5</a>  
+<a href="csslesson5.html">CSS Lesson 6</a>  
+<a id="activeAlt" href="#">JS Lesson</a>
+</div>
+</div>
+<div align="center" class="main">
+<div>
+<h2 class="spaserh2">What is JavaScript and How is it Useful to HTML, JS, and CSS.</h2>
+<div class="textStyleArea">
+<p>JavaScript is used to make stuff that CSS and HTML can not do like dropdowns, copy to clipboard botton, or a lot of inractive websites.</p>
+<p>It can update and change both HTML and CSS.</p>
+<p>It can calculate, manipulate and validate data.</p>	
+</div>
+</div>
+<div>
+<h2 class="spaserh2">Example of JS</h2>
+<div class="textStyleArea">
+<p>One of many JavaScript methods of refaring to stuff on an html or css page is using getElementById() or getElementsByClassName().</p>
+</div>
+<code class="codeBackColor textToCopy">
+<p>&lt;p id="demo"&gt;JavaScript can change HTML content so click the button and the text will change to &quot;Hello JavaScript!&quot;&lt;/p&gt;</p>
+<p>&lt;button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'"&gt;Click Me!&lt;/button&gt;</p>
+<div align="right">
+<svg onclick="copyText(0)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>
+<div class="outPutOfTheCodeBackColor">
+<p id="demo">JavaScript can change HTML content so click the button and the text will change to &quot;Hello JavaScript!&quot;</p>
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello JavaScript!'">Click Me!</button>
+</div>
+<br>
+</div>
+<div>
+<h2 class="spaserh2">Variables</h2>
+<div class="textStyleArea">
+<p>Variables are Containers for Storing Data. JavaScript Variables can be declared in 4 ways Automatically Using var Using let Using const.</p>
+</div>	
+<br>
+<code class="codeBackColor textToCopy">
+<div>
+<p>x = 9;</p>
+<p>y = 6;</p>
+<p>z = x + y;</p>
+<p>var x = 1;</p>
+<p>var y = 7;</p>
+<p>var z = x + y;</p>
+<p>let x = 3;</p>
+<p>let y = 7;</p>
+<p>let z = x + y;</p>
+<p>const x = 10;</p>
+<p>const y = 2;</p>
+<p>const z = x + y;</p>
+<div align="right">
+<svg onclick="copyText(1)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</div>
+</code>	
+<br>
+<div class="outPutOfTheCodeBackColor">
+<label>Automatically</label>
+<p>15</p>	
+<label>Var</label>
+<p>8</p>	
+<label>Let</label>
+<p>10</p>	
+<label>Const</label>
+<p>12</p>	
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">What is it useful for in most websites?</h2>
+<div class="textStyleArea">
+<p>The best use case of most website is doing and make stuff that both css and html cannot do.</p>	
+<p>This can be for copying, and Event Handling  to make your website more interative.</p>
+</div>
+</div>
+<div>
+<h2 class="spaserh2">Copy</h2>
+<div class="textStyleArea">
+<p>One of the most useful things to add is a copy to make copying text or code eseyer to do.</p>	
+</div>	
+<br>
+<code class="codeBackColor textToCopy">
+<p>function copyIframeContent() {</p>
+<p>const copyAt = document.getElementById('copyToText');</p>
+<p>const copyDocument = copyAt.contentDocument || copyAt.contentWindow.document;</p>
+<p>const textToCopy = copyDocument.body.innerText || copyDocument.body.textContent;</p>  
+<p>if (navigator.clipboard) {</p>
+<p>navigator.clipboard.writeText(textToCopy).then(() =&gt; {</p>
+<p>}).catch(err =&gt; {</p>
+<p>console.error('Failed to copy: ', err);</p>
+<p>});</p>
+<p>} else {</p>
+<p>// Fallback for older browsers</p>
+<p>const textarea = document.createElement('textarea');</p>
+<p>textarea.value = textToCopy;</p>
+<p>document.body.appendChild(textarea);</p>
+<p>textarea.select();</p>
+<p>document.execCommand('copy');</p>
+<p>document.body.removeChild(textarea);</p>
+<p>}</p>
+<p>}</p>
+<div align="right">
+<svg onclick="copyText(2)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<br>
+<div class="outPutOfTheCodeBackColor">
+<div class="textToCopy">
+<p>This text is what is being copyed :</p>
+<p>: It can also be copyed in this line</p>
+<input type="button" value="Click this to copy the text" onclick="copyText(3)" style="width: 200px; height: 25px;">
+</div>
+</div>
+</div>
+<br>
+<div>
+<h2 class="spaserh2">Event Handling</h2>
+<div class="textStyleArea">
+<p>Event handling is the most uivsle useful making websites more interative changing not just text but also code of HTML, CSS, and JS.</p>
+</div>	
+<br>
+<code class="codeBackColor textToCopy">
+<p>&lt;div id="divChange" style="width: 100px; height: 100px; background-color: red;"&gt;&lt;/div&gt;</p>
+&lt;button type="button" onclick="document.getElementById('divChange').style = 'width: 300px; height: 300px; background-color: green;'"&gt;Click Me!&lt;/button&gt;
+<div align="right">
+<svg onclick="copyText(4)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+</div>
+</code>	
+<br>
+<div class="outPutOfTheCodeBackColor">
+<div id="divChange" style="width: 100px; height: 100px; background-color: red;"></div>
+<br>
+<button type="button" onclick="document.getElementById('divChange').style = 'width: 300px; height: 300px; background-color: green;'">Click Me!</button>
+</div>
+</div>
+<br>
+</div>
+<nav class="backNextHtml" align="center">
+<div style="padding: 4px;"></div>
+<a href="HomeCCS.html"><button>Home</button></a>
+</nav>
+<script>
+// For nav bar drop down
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+// copying part of the text with the class textToCopy 
+function copyText(index) {
+    var elements = document.getElementsByClassName("textToCopy");
+    var text = elements[index].innerText;
+    var textArea = document.createElement("textarea");
+    textArea.value = text;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textArea);
+}
+</script>
+</body>
+</html>

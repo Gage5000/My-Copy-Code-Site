@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Code Copy Site | Drag and Drop Code</title>
+<link rel="stylesheet" type="text/css" href="ccs.css"> 
+<script src="Thefixer.js"></script>
+</head>
+<body>
+ <nav class="backNextHtml">
+<h1>Drag and Drop Code</h1>
+</nav>
+<script>
+function allowDrop(ev) {
+ev.preventDefault();
+}
+function drag(ev) {
+ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+ev.preventDefault();
+var data = ev.dataTransfer.getData("text");
+ev.target.appendChild(document.getElementById(data));
+}	
+</script>
+<div class="sidenav">
+<div>
+<h2 align="center" id="colorDiff">Copy, Code, and Learn</h2>
+</div>
+<a href="HomeCCS.html">Home</a>
+<button class="dropdown-btn">Tools    
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i>
+</button>
+<div class="dropdown-container"> 
+<a href="csscolorshower.html">Css Shower</a>
+<a id="activeAlt" href="#">Drag and Drop</a>
+</div>	
+<button class="dropdown-btn">Code Lessons
+<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i>
+</button>
+<div class="dropdown-container">
+<a href="htmlesson0.html">HTML Lesson 1</a>
+<a href="htmlesson1.html">HTML Lesson 2</a>
+<a href="htmlesson2.html">HTML Lesson 3</a>
+<a href="htmlesson3.html">HTML Lesson 4</a>
+<a href="htmlesson4.html">HTML Lesson 5</a>
+<a href="htmlesson5.html">HTML Lesson 6</a>
+<a href="htmlesson6.html">HTML Lesson 7</a>
+<a href="csslesson0.html">CSS Lesson 1</a>
+<a href="csslesson1.html">CSS Lesson 2</a>  
+<a href="csslesson2.html">CSS Lesson 3</a>  
+<a href="csslesson3.html">CSS Lesson 4</a>  
+<a href="csslesson4.html">CSS Lesson 5</a>  
+<a href="csslesson5.html">CSS Lesson 6</a>  
+<a href="jslesson.html">JS Lesson</a>
+</div>
+</div>
+<div class="main">
+<div align="center" class="backColorOfFilesOver">	
+<div class="backColorOfFiles giveMeSpace">
+<h1>Upload Image File</h1>
+<div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">
+<input type="file" id="imageInput" accept="image/*">
+<br><br>
+<img id="preview1" src="#" alt="Image Preview" style="width: 200px; height: 200px; display: none;">
+</div>
+<br><br>
+<div style="padding-bottom:110px;"></div>	
+<div class="textToCopy">
+<svg id="disOn1" onclick="copyText(0)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2 disOff" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+<code id="imgCode" class="codePlaces"></code>
+</div>	
+</div>
+<div class="backColorOfFiles">
+<h1>Upload Video File</h1>
+<div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">
+<input type="file" id="videoInput" accept="video/*">
+<br><br>
+<video id="preview2" controls style="width: 200px;height:200px; display: none;"></video>
+</div>
+<br><br>
+<div style="padding-bottom:110px;"></div>
+<div class="textToCopy">
+<svg id="disOn2" onclick="copyText(1)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2 disOff" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+<code id="videoCode" class="codePlaces"></code>
+</div>	
+</div>
+<div class="backColorOfFiles">
+<h1>Upload Audio File</h1>
+<div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">
+<input type="file" id="audioInput" accept="audio/*">
+<br><br>
+<audio id="preview3" controls style="display: none; width: 250px"></audio>
+</div>
+<br><br>
+<div style="padding-bottom:256px;"></div>
+<div class="textToCopy">
+<svg id="disOn3" onclick="copyText(2)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2 disOff" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+<code id="audioCode" class="codePlaces"></code>
+</div>	
+</div>
+<div class="backColorOfFiles">
+<h1>Upload Text File</h1>
+<div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
+<input type="file" id="iframeInput" accept=".txt">
+<br><br>
+<iframe id="preview4" style="width:auto; width: 100px height: 300px; display: none;"></iframe>
+</div>
+<br><br>	
+<div style="padding-bottom:156px;"></div>	
+<div class="textToCopy">
+<svg id="disOn4" onclick="copyText(3)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2 disOff" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+<code id="iframeCode" class="codePlaces"></code>
+</div>		
+</div>	
+<div class="backColorOfFiles">
+<h1>Upload CSS File</h1>
+<div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
+<input type="file" id="cssInputFile" accept=".css">
+<br><br>
+<iframe id="preview5" style="width: auto; width: 100px height: 300px; display: none;"></iframe>
+</div>
+<br><br>	
+<button id="disOn5" onclick="copyIframeContent()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 disOff">Copy Content</button>
+<div style="padding-bottom:180px;"></div>
+<code id="cssCodePls" class="codePlaces"></code>
+</div>		
+<div class="backColorOfFiles">
+<h1>Upload PDF File</h1>
+<div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
+<input type="file" id="pdfInput" accept=".pdf">
+<br><br>
+<iframe id="preview6" style="width: auto; width: 100px height: 300px; display: none;"></iframe>
+</div>
+<br><br>	
+<div style="padding-bottom:156px;"></div>
+<div class="textToCopy">
+<svg id="disOn6" onclick="copyText(4)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2 disOff" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+<code id="pdfCode" class="codePlaces"></code>
+</div>		
+</div>			
+<div class="backColorOfFiles">
+<h1>Upload HTML File</h1>
+<div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
+<input type="file" id="htmlInputFile" accept=".html">
+<br><br>
+<iframe id="preview7" style="width: auto; width: 100px height: 300px; display: none;"></iframe>
+</div>
+<br><br>	
+<div style="padding-bottom:156px;"></div>
+<div class="textToCopy">
+<svg id="disOn7" onclick="copyText(5)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2 disOff" viewBox="0 0 16 16">
+<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
+<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
+</svg>
+<code id="htmlCode" class="codePlaces"></code>
+</div>		
+</div>		
+<div class="backColorOfFiles">
+<h1>Upload JS File</h1>
+<div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
+<input type="file" id="jsInput" accept=".js">
+<br><br>
+<iframe id="preview8" style="width: auto; width: 100px height: 300px; display: none;"></iframe>
+</div>
+<br><br>
+<button id="disOn8" onclick="copyJsIframeContent()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 disOff">Copy Content</button>
+<div style="padding-bottom:180px;"></div>
+<div class="textToCopy">
+<code id="jsCode" class="codePlaces"></code>
+</div>			
+</div>			
+</div>
+<br>
+<details>
+<summary align="center">HTML Drag and Drop Tags &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i></summary>
+<div class="flexIt borderInBorder" align="center">
+<h3 align="center">HTML Tags</h3>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<p> </p>" width="88" height="31">p</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<h1> </h1>" width="88" height="31">h1</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<div> </div>" width="88" height="31">div</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<br>" width="88" height="31">br</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<nav> </nav>" width="88" height="31">nav</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<code> </code>" width="88" height="31">code</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<small> </small>" width="88" height="31">small</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<b> </b>" width="88" height="31">b</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<strong> </strong>" width="88" height="31">strong</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<em> </em>" width="88" height="31">em</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<img src=&quot;&quot; alt=&quot;&quot;>" width="88" height="31">img</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="@charset  &quot;utf-8&quot;;" width="88" height="31">css base</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<i> </i>" width="88" height="31">i</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<mark> </mark>" width="88" height="31">mark</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<del> </del>" width="88" height="31">del</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<ins> </ins>" width="88" height="31">ins</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<sub> </sub>" width="88" height="31">sub</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" 
+id="<ul>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+	<li> </li>
+</ul>" width="88" height="31">unlist</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+</body>
+</html>" width="88" height="31">html base</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<iframe src=&quot;&quot;> </iframe>" width="88" height="31">audio</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<audio src=&quot;&quot; controls> </audio>" width="88" height="31">iframe</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<video src=&quot;&quot; controls> </video>" width="88" height="31">video</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<input type=&quot;&quot;>" width="88" height="31">input</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<button> </button>" width="88" height="31">button</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<a href=&quot;&quot;> </a>" width="88" height="31">a</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<label> </label>" width="88" height="31">label</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<textarea> </textarea>" width="88" height="31">textarea</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<details>
+<summary></summary>
+
+</details>" width="88" height="31">details</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<q> </q>" width="88" height="31">q</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<form> </form>" width="88" height="31">form</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<meta>" width="88" height="31">meta</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="<hr>" width="88" height="31">hr</p>
+</div>		
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="<canvas> </canvas>" width="88" height="31">canvas</p>
+</div>	
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="<link rel=&quot;&quot; type=&quot;&quot; href=&quot;&quot;>" width="88" height="31">link</p>
+</div>		
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="<style> </style>" width="88" height="31">style</p>
+</div>	
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="<cite> </cite>" width="88" height="31">cite</p>
+</div>	
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="<time> </time>" width="88" height="31">time</p>
+</div>
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="<script> </script>" width="88" height="31">script</p>
+</div>
+</div>
+</details>
+<br>
+<details>
+<summary align="center">HTML Drag and Drop Attributes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i></summary>
+<div class="flexIt borderInBorder" align="center">
+<h3 align="center">HTML Attributes</h3>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="alt=&quot;&quot;" width="88" height="31">alt</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="action=&quot;&quot;" width="88" height="31">action</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="cite=&quot;&quot;" width="88" height="31">cite</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="class=&quot;&quot;" width="88" height="31">class</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="id=&quot;&quot;" width="88" height="31">id</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="cols=&quot;&quot;" width="88" height="31">cols</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="disabled" width="88" height="31">disabled</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="accesskey=&quot;&quot;" width="88" height="31">access</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="draggable=&quot;&quot;" width="88" height="31">draggable</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="autocomplete=&quot;&quot;" width="88" height="31">autocomplete</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="autofocus" width="88" height="31">autofocus</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="autoplay" width="88" height="31">autoplay</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="charset=&quot;&quot;" width="88" height="31">charset</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="controls" width="88" height="31">controls</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="colspan=&quot;&quot;" width="88" height="31">colspan</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="content=&quot;&quot;" width="88" height="31">content</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="contenteditable=&quot;&quot;" width="88" height="31">editable</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="form=&quot;&quot;" width="88" height="31">form</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="datetime=&quot;&quot;" width="88" height="31">datetime</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="hidden" width="88" height="31">hidden</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="dir=&quot;&quot;" width="88" height="31">dir</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="width=&quot;&quot;" width="88" height="31">width</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="value=&quot;&quot;" width="88" height="31">value</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="type=&quot;&quot;" width="88" height="31">type</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="title=&quot;&quot;" width="88" height="31">title</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="style=&quot;&quot;" width="88" height="31">style</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="height=&quot;&quot;" width="88" height="31">height</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="href=&quot;&quot;" width="88" height="31">href</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="label=&quot;&quot;" width="88" height="31">label</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="lang=&quot;&quot;" width="88" height="31">lang</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="name=&quot;&quot;" width="88" height="31">name</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="max=&quot;&quot;" width="88" height="31">max</p>
+</div>		
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="min=&quot;&quot;" width="88" height="31">min</p>
+</div>	
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="media=&quot;&quot;" width="88" height="31">media</p>
+</div>		
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="placeholder=&quot;&quot;" width="88" height="31">placeholder</p>
+</div>	
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="rel=&quot;&quot;" width="88" height="31">rel</p>
+</div>	
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="size=&quot;&quot;" width="88" height="31">size</p>
+</div>
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="src=&quot;&quot;" width="88" height="31">src</p>
+</div>
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="target=&quot;&quot;" width="88" height="31">target</p>
+</div>
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="span=&quot;&quot;" width="88" height="31">span</p>
+</div>
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="popover" width="88" height="31">popover</p>
+</div>
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="readonly" width="88" height="31">readonly</p>
+</div>	
+</div>
+</details>	
+<br>
+<details>
+<summary align="center">CSS Drag and Drop Properties &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-caret-down">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
+</svg>	
+</i></summary>
+<div class="flexIt borderInBorder" align="center">
+<h3 align="center">CSS Properties</h3>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="border:;" width="88" height="31">border</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="animation:;" width="88" height="31">animation</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="background:;" width="88" height="31">background</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="border-block:;" width="88" height="31">border block</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="color:;" width="88" height="31">color</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="columns:;" width="88" height="31">columns</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="column-rule:;" width="88" height="31">column rule</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="display:;" width="88" height="31">display</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="flex:;" width="88" height="31">flex</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="flex-flow:;" width="88" height="31">flex flow</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="font:;" width="88" height="31">font</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="grid:;" width="88" height="31">grid</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="gap:;" width="88" height="31">gap</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="height:;" width="88" height="31">height</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="inset:;" width="88" height="31">inset</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="justify-content:;" width="88" height="31">justify content</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="list-style:;" width="88" height="31">list style</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="margin:;" width="88" height="31">margin</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="marker:;" width="88" height="31">marker</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="mask:;" width="88" height="31">mask</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="offset:;" width="88" height="31">offset</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="outline:;" width="88" height="31">outline</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="overflow:;" width="88" height="31">overflow</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="overscroll-behavior:;" width="88" height="31">overscroll</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="padding:;" width="88" height="31">padding</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="scroll-margin:;" width="88" height="31">scroll margin</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="scroll-padding:;" width="88" height="31">scroll padding</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="text-align:;" width="88" height="31">text align</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="text-decoration:;" width="88" height="31">text decoration</p>
+</div>
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="text-emphasis:;" width="88" height="31">text emphasis</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="transition:;" width="88" height="31">transition</p>
+</div>	
+<div class="gridItem">
+<p draggable="true" ondragstart="drag(event)" id="width:;" width="88" height="31">width</p>
+</div>		
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="all:;" width="88" height="31">all</p>
+</div>	
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="float:;" width="88" height="31">float</p>
+</div>		
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="bottom:;" width="88" height="31">bottom</p>
+</div>	
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="top:;" width="88" height="31">top</p>
+</div>	
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="cursor:;" width="88" height="31">cursor</p>
+</div>
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="@import ;" width="88" height="31">import</p>
+</div>
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="left: ;" width="88" height="31">left</p>
+</div>
+<div class="gridItem">
+	<p draggable="true" ondragstart="drag(event)" id="right: ;" width="88" height="31">right</p>
+</div>
+</div>
+</details>		
+<br>
+<div class="container">
+<div id="lineNumbers" class="containerLines"></div>
+<textarea spellcheck="false" placeholder="Place HTML Here" id="textarea" class="containerTextarea"></textarea>
+<div class="containerLines2"></div>
+<textarea id="cssInput" spellcheck="false" placeholder="Place CSS Here" class="containerTextarea"></textarea>
+</div>
+<div align="center">
+<button style="margin-left: 40px;" class="buttonDisplay" onClick="displayHTML()">Display Your Code</button>
+</div>
+<div id="htmlOutput" class="output"></div>
+</div>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+	  this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+function displayHTML() {
+const htmlContent = document.getElementById('textarea').value;
+const cssContent = document.getElementById('cssInput').value;
+let styleElement = document.getElementById('customStyle');
+if (!styleElement) {
+    styleElement = document.createElement('style');
+    styleElement.id = 'customStyle';
+    document.head.appendChild(styleElement);
+}
+styleElement.innerHTML = `#htmlOutput { ${cssContent} }`;
+document.getElementById('htmlOutput').innerHTML = htmlContent;
+}
+displayHTML();
+
+function copyIframeContent() {
+const iframe = document.getElementById('preview5');
+const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+const textToCopy = iframeDocument.body.innerText || iframeDocument.body.textContent;
+	
+if (navigator.clipboard) {
+	navigator.clipboard.writeText(textToCopy).then(() => {
+	}).catch(err => {
+		console.error('Failed to copy: ', err);
+	});
+} else {
+// Fallback for older browsers
+const textarea = document.createElement('textarea');
+textarea.value = textToCopy;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');
+document.body.removeChild(textarea);
+}
+}
+	
+function copyJsIframeContent() {
+const jsIframe = document.getElementById('preview8');
+const jsIframeDocument = jsIframe.contentDocument || jsIframe.contentWindow.document;
+const jsTextToCopy = jsIframeDocument.body.innerText || jsIframeDocument.body.textContent;	
+	
+if (navigator.clipboard) {
+	navigator.clipboard.writeText(jsTextToCopy).then(() => {
+	}).catch(err => {
+		console.error('Failed to copy: ', err);
+	});
+} else {
+// Fallback for older browsers
+const textarea = document.createElement('textarea');
+textarea.value = jsTextToCopy;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');
+document.body.removeChild(textarea);
+}
+}	
+	
+const imageInput = document.getElementById('imageInput');
+const preview = document.getElementById('preview1');
+const imgCode = document.getElementById('imgCode');
+const disOn1 = document.getElementById('disOn1');
+	
+imageInput.addEventListener('change', function(event) {
+const file = event.target.files[0];
+if (file) {
+const objectURL = URL.createObjectURL(file);
+preview.src = objectURL;
+preview.style.display = "inline-block";
+imgCode.innerText = `${objectURL}`;
+imgCode.style.display = "inline-block";
+disOn1.style.display = "inline-block";
+}
+});
+const videoInput = document.getElementById('videoInput');
+const previewTwo = document.getElementById('preview2');
+const videoCode = document.getElementById('videoCode');
+const disOn2 = document.getElementById('disOn2');
+
+videoInput.addEventListener('change', function(event) {
+const file = event.target.files[0];
+if (file) {
+const objectURL = URL.createObjectURL(file);
+previewTwo.src = objectURL;
+previewTwo.style.display = "inline-block";
+videoCode.innerText = `${objectURL}`;
+videoCode.style.display = "inline-block";
+disOn2.style.display = "inline-block";	
+}
+});
+const audioInput = document.getElementById('audioInput');
+const previewThree = document.getElementById('preview3');
+const audioCode = document.getElementById('audioCode');
+const disOn3 = document.getElementById('disOn3');
+	
+audioInput.addEventListener('change', function(event) {
+const file = event.target.files[0];
+if (file) {
+const objectURL = URL.createObjectURL(file);
+previewThree.src = objectURL;
+previewThree.style.display = "inline-block";
+audioCode.innerText = `${objectURL}`;
+audioCode.style.display = "inline-block";
+disOn3.style.display = "inline-block";
+}
+});
+const iframeInput = document.getElementById('iframeInput');
+const previewFar = document.getElementById('preview4');
+const iframeCode = document.getElementById('iframeCode');
+const disOn4 = document.getElementById('disOn4');
+	
+iframeInput.addEventListener('change', function(event) {
+const file = event.target.files[0];
+if (file) {
+const objectURL = URL.createObjectURL(file);
+previewFar.src = objectURL;
+previewFar.style.display = "inline-block";
+iframeCode.innerText = `${objectURL}`;
+iframeCode.style.display = "inline-block";
+disOn4.style.display = "inline-block";
+}
+});	
+const cssInputEX = document.getElementById('cssInputFile');
+const previewFive = document.getElementById('preview5');
+const cssCode = document.getElementById('cssCodePls');
+const disOn5 = document.getElementById('disOn5');
+	
+cssInputEX.addEventListener('change', function(event) {
+const file = event.target.files[0];
+if (file) {
+const objectURL = URL.createObjectURL(file);
+previewFive.src = objectURL;
+previewFive.style.display = "inline-block";
+cssCode.innerText = `Copy To Clipbord Than Add It To The "Place CSS Here"`;
+cssCode.style.display = "inline-block";
+disOn5.style.display = "inline-block";
+}
+});			
+const pdfInput = document.getElementById('pdfInput');
+const previewSix = document.getElementById('preview6');
+const pdfCode = document.getElementById('pdfCode');
+const disOn6 = document.getElementById('disOn6');
+	
+pdfInput.addEventListener('change', function(event) {
+const file = event.target.files[0];
+if (file) {
+const objectURL = URL.createObjectURL(file);
+previewSix.src = objectURL;
+previewSix.style.display = "inline-block";
+pdfCode.innerText = `${objectURL}`;
+pdfCode.style.display = "inline-block";
+disOn6.style.display = "inline-block";
+}
+});		
+const htmlInputFile = document.getElementById('htmlInputFile');
+const previewSeven = document.getElementById('preview7');
+const htmlCode = document.getElementById('htmlCode');
+const disOn7 = document.getElementById('disOn7');
+	
+htmlInputFile.addEventListener('change', function(event) {
+const file = event.target.files[0];
+if (file) {
+const objectURL = URL.createObjectURL(file);
+previewSeven.src = objectURL;
+previewSeven.style.display = "inline-block";
+htmlCode.innerText = `${objectURL}`
+htmlCode.style.display = "inline-block";
+disOn7.style.display = "inline-block";
+}
+});		
+const jsInput = document.getElementById('jsInput');
+const previewEight = document.getElementById('preview8');
+const jsCode = document.getElementById('jsCode');
+const disOn8 = document.getElementById('disOn8');
+	
+jsInput.addEventListener('change', function(event) {
+const file = event.target.files[0];
+if (file) {
+const objectURL = URL.createObjectURL(file);
+previewEight.src = objectURL;
+previewEight.style.display = "inline-block";
+jsCode.innerText = `Copy To Clipbord Than Add It To The "Place CSS Here"`;
+jsCode.style.display = "inline-block";
+disOn8.style.display = "inline-block";
+}
+});
+function copyText(index) {
+    var elements = document.getElementsByClassName("textToCopy");
+    var text = elements[index].innerText;
+    var textAreaMaker = document.createElement("textarea");
+    textAreaMaker.value = text;
+    document.body.appendChild(textAreaMaker);
+    textAreaMaker.select();
+    document.execCommand("copy");
+    document.body.removeChild(textAreaMaker);
+}	
+</script>
+</body>
+</html>
+
