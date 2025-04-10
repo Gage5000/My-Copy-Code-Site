@@ -122,7 +122,7 @@ ev.target.appendChild(document.getElementById(data));
 <div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
 <input type="file" id="iframeInput" accept=".txt">
 <br><br>
-<iframe id="preview4" style="width:auto; width: 100px height: 300px; display: none;"></iframe>
+<iframe id="preview4" style="width:auto; width: 300px; height: 150px; display: none;"></iframe>
 </div>
 <br><br>	
 <div style="padding-bottom:156px;"></div>	
@@ -139,7 +139,7 @@ ev.target.appendChild(document.getElementById(data));
 <div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
 <input type="file" id="cssInputFile" accept=".css">
 <br><br>
-<iframe id="preview5" style="width: auto; width: 100px height: 300px; display: none;"></iframe>
+<iframe id="preview5" style="width: auto; width: 300px; height: 150px; display: none;"></iframe>
 </div>
 <br><br>	
 <button id="disOn5" onclick="copyIframeContent()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 disOff">Copy Content</button>
@@ -151,7 +151,7 @@ ev.target.appendChild(document.getElementById(data));
 <div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
 <input type="file" id="pdfInput" accept=".pdf">
 <br><br>
-<iframe id="preview6" style="width: auto; width: 100px height: 300px; display: none;"></iframe>
+<iframe id="preview6" style="width: auto; width: 300px; height: 150px; display: none;"></iframe>
 </div>
 <br><br>	
 <div style="padding-bottom:156px;"></div>
@@ -168,15 +168,12 @@ ev.target.appendChild(document.getElementById(data));
 <div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
 <input type="file" id="htmlInputFile" accept=".html">
 <br><br>
-<iframe id="preview7" style="width: auto; width: 100px height: 300px; display: none;"></iframe>
+<iframe id="preview7" style="width: auto; width: 300px; height: 150px; display: none;"></iframe>
 </div>
-<br><br>	
-<div style="padding-bottom:156px;"></div>
+<br><br>
+<button id="disOn7" onclick="copyJsIframeContent()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 disOff">Copy Content</button>	
+<div style="padding-bottom:180px;"></div>
 <div class="textToCopy">
-<svg id="disOn7" onclick="copyText(5)" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-clipboard2 disOff" viewBox="0 0 16 16">
-<path d="M3.5 2a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H12a.5.5 0 0 1 0-1h.5A1.5 1.5 0 0 1 14 2.5v12a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 14.5v-12A1.5 1.5 0 0 1 3.5 1H4a.5.5 0 0 1 0 1z"/>
-<path d="M10 .5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5.5.5 0 0 1-.5.5.5.5 0 0 0-.5.5V2a.5.5 0 0 0 .5.5h5A.5.5 0 0 0 11 2v-.5a.5.5 0 0 0-.5-.5.5.5 0 0 1-.5-.5"/>
-</svg>
 <code id="htmlCode" class="codePlaces"></code>
 </div>		
 </div>		
@@ -185,7 +182,7 @@ ev.target.appendChild(document.getElementById(data));
 <div style="display: inline-block; background-color: rgba(7,7,7,1.00); padding: 5px;">	
 <input type="file" id="jsInput" accept=".js">
 <br><br>
-<iframe id="preview8" style="width: auto; width: 100px height: 300px; display: none;"></iframe>
+<iframe id="preview8" style="width: auto; width: 300px; height: 150px; display: none;"></iframe>
 </div>
 <br><br>
 <button id="disOn8" onclick="copyJsIframeContent()" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700 disOff">Copy Content</button>
@@ -795,7 +792,7 @@ if (file) {
 const objectURL = URL.createObjectURL(file);
 previewSeven.src = objectURL;
 previewSeven.style.display = "inline-block";
-htmlCode.innerText = `${objectURL}`
+htmlCode.innerText = `Copy To Clipbord Than Add It To The "place HTML Here"`;
 htmlCode.style.display = "inline-block";
 disOn7.style.display = "inline-block";
 }
@@ -811,7 +808,7 @@ if (file) {
 const objectURL = URL.createObjectURL(file);
 previewEight.src = objectURL;
 previewEight.style.display = "inline-block";
-jsCode.innerText = `Copy To Clipbord Than Add It To The "Place CSS Here"`;
+jsCode.innerText = `Copy To Clipbord Than Add It To An "script" Tag`;
 jsCode.style.display = "inline-block";
 disOn8.style.display = "inline-block";
 }
